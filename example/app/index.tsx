@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-import VisualPositioningSystem from "react-native-visual-positioning-system";
+// import VisualPositioningSystem from "react-native-visual-positioning-system";
 
 export default function Index() {
   useEffect(() => {
     // Log the module to check if it's loaded correctly.
-    console.log("VisualPositioningSystem module:", VisualPositioningSystem);
+    // console.log("VisualPositioningSystem module:", VisualPositioningSystem);
   }, []);
 
   const handlePress = () => {
-    VisualPositioningSystem?.printMsg("Hello from my app!");
+    // VisualPositioningSystem?.printMsg("Hello from my app!");
   };
 
   return (
