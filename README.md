@@ -24,8 +24,11 @@ For Android, you need to enable the New Architecture by setting
 
 ```javascript
 import VisualPositioningSystem from "react-native-visual-positioning-system";
+import { useEffect, useRef } from "react";
+import { EventSubscription } from "react-native";
 
 // ...
 
-VisualPositioningSystem?.printMsg("Hello from my app!");
+// To call the add method
+const result = await VisualPositioningSystem?.add(3, 7);
 ```
