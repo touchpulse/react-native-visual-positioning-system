@@ -32,3 +32,34 @@ import { EventSubscription } from "react-native";
 // To call the add method
 const result = await VisualPositioningSystem?.add(3, 7);
 ```
+
+## Example
+
+An example project is available in the
+`../react-native-visual-positioning-system-example` directory. See the
+[README.md](../react-native-visual-positioning-system-example/README.md) file in
+that directory for instructions on how to run the example.
+
+## Publishing to NPM
+
+To publish the package to NPM, follow these steps:
+
+1. Ensure you have committed all your changes and have the latest version of the
+   code.
+2. Create a git tag for the new version. For example:
+
+   ```sh
+   git tag v1.0.0
+   git push --tags
+   ```
+
+3. Publish the package to NPM:
+
+   ```sh
+   npm publish
+   ```
+
+4. Verify that the package is published by checking the NPM registry or by
+   installing it in a test project.
+
+Note: Replace `v1.0.0` with the actual version number you are releasing.
