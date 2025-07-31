@@ -35,10 +35,9 @@ const result = await VisualPositioningSystem?.add(3, 7);
 
 ## Example
 
-An example project is available in the
-`../react-native-visual-positioning-system-example` directory. See the
-[README.md](../react-native-visual-positioning-system-example/README.md) file in
-that directory for instructions on how to run the example.
+An example project is available in the `example` directory. See the
+[README.md](./example/README.md) file in that directory for instructions on how
+to run the example.
 
 ## Publishing to NPM
 
