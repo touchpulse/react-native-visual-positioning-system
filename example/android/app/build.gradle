@@ -87,9 +87,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.touchpulse.example'
+    namespace 'com.touchpulse.VPSExample'
     defaultConfig {
-        applicationId 'com.touchpulse.example'
+        applicationId 'com.touchpulse.VPSExample'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

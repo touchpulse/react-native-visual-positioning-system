@@ -1,4 +1,4 @@
-package com.touchpulse.example
+package com.touchpulse.VPSExample
 
 import android.app.Application
 import android.content.res.Configuration
