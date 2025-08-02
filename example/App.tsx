@@ -15,10 +15,10 @@ export default function App() {
 
   useEffect(() => {
     // @ts-expect-error The TurboModule guide shows a new way to handle events
-    // that might not align with the Spec's type definition yet.
-    listenerSubscription.current = VPS?.onValueChanged((value: number) => {
+    listenerSubscription.current = VPS.onValueChanged((value: number) => {
       Alert.alert(`Result from event: ${value}`);
     });
+    VPS.start();
 
     return () => {
       listenerSubscription.current?.remove();
@@ -26,7 +26,7 @@ export default function App() {
   }, []);
 
   const handlePress = async () => {
-    const value = await VPS?.add(3, 8);
+    const value = await VPS.add(3, 7);
     console.log("Result from native module:", value);
     setResult(value ?? null);
   };

@@ -37,7 +37,8 @@ const result = await VisualPositioningSystem?.add(3, 7);
 
 An example project is available in the `example` directory. See the
 [README.md](./example/README.md) file in that directory for instructions on how
-to run the example.
+to run the example, or use `npm run android:upgrade` or `npm run ios:upgrade` to
+run the example with the latest changes to the package.
 
 ## Publishing to NPM
 

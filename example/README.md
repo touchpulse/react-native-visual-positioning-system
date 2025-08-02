@@ -37,19 +37,20 @@ allowing for easy development and testing.
 
 ## Development
 
-If you modified the parent package's code, you need to build the library, merge
-it, and rebuild the native modules before running the app. Follow these steps:
+If you modified the parent package's code, you need to:
+
+- build the library
+- merge it, and
+- rebuild the native modules before running the app.
+
+Use:
 
 ```bash
-# Build the library
-cd ../
-npm run prepare
+yarn android:upgrade
+```
 
-# Merge the changes
-cd example
-yarn upgrade react-native-visual-positioning-system
+or
 
-# Rebuild the native modules and run the app
-yarn android
-yarn ios
+```bash
+yarn ios:upgrade
 ```

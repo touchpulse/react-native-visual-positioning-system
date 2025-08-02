@@ -47,7 +47,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "typescript": "tsc --noEmit",
-    "prepare": "bob build"
+    "prepare": "bob build",
+    "android": "cd ./example/ && yarn android:upgrade",
+    "ios": "cd ./example/ && yarn ios:upgrade"
   },
   "react-native-builder-bob": {
     "source": "src",

@@ -5,7 +5,9 @@
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
+    "android:upgrade": "cd .. && npm run prepare && cd ./example/ && yarn upgrade react-native-visual-positioning-system && yarn android",
     "ios": "expo run:ios",
+    "ios:upgrade": "cd .. && npm run prepare && cd ./example/ && yarn upgrade react-native-visual-positioning-system && yarn ios",
     "web": "expo start --web"
   },
   "dependencies": {
