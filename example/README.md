@@ -29,18 +29,27 @@ allowing for easy development and testing.
 
    ```bash
    # For Android
-   npx expo run:android
+   yarn android
 
    # For iOS
-   npx expo run:ios # MacOS only
+   yarn ios # MacOS only
    ```
 
 ## Development
 
-On subsequent runs, given the native code was **not** changed, you can use the
-following command to start the app without rebuilding the native code:
+If you modified the parent package's code, you need to build the library, merge
+it, and rebuild the native modules before running the app. Follow these steps:
 
 ```bash
-npx expo start
-```
+# Build the library
+cd ../
+npm run prepare
 
+# Merge the changes
+cd example
+yarn upgrade react-native-visual-positioning-system
+
+# Rebuild the native modules and run the app
+yarn android
+yarn ios
+```

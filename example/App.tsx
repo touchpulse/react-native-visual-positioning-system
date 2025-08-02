@@ -26,7 +26,7 @@ export default function App() {
   }, []);
 
   const handlePress = async () => {
-    const value = await VPS?.add(3, 7);
+    const value = await VPS?.add(3, 8);
     console.log("Result from native module:", value);
     setResult(value ?? null);
   };
