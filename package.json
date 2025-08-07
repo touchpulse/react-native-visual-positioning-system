@@ -7,6 +7,13 @@
   "react-native": "src/index.ts",
   "source": "src/index.ts",
   "types": "lib/typescript/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typescript": "tsc --noEmit",
+    "prepare": "bob build",
+    "android": "cd ./example/ && yarn android:upgrade",
+    "ios": "cd ./example/ && yarn ios:upgrade"
+  },
   "files": [
     "src",
     "android",
@@ -43,13 +50,6 @@
     "@types/react": "^19.1.1",
     "react-native-builder-bob": "^0.40",
     "typescript": "^5.0.4"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "typescript": "tsc --noEmit",
-    "prepare": "bob build",
-    "android": "cd ./example/ && yarn android:upgrade",
-    "ios": "cd ./example/ && yarn ios:upgrade"
   },
   "react-native-builder-bob": {
     "source": "src",

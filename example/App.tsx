@@ -14,7 +14,6 @@ export default function App() {
   const listenerSubscription = useRef<EventSubscription | null>(null);
 
   useEffect(() => {
-    // @ts-expect-error The TurboModule guide shows a new way to handle events
     listenerSubscription.current = VPS.onValueChanged((value: number) => {
       Alert.alert(`Result from event: ${value}`);
     });
@@ -56,4 +55,3 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
 });
-
