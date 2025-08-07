@@ -14,7 +14,7 @@ allowing for easy development and testing.
 
    ```bash
    cd ../
-   npm install
+   yarn
    ```
 
 2. **Install example dependencies:** Navigate back to this example directory and
@@ -39,7 +39,7 @@ allowing for easy development and testing.
 
 If you modified the parent package's code, you need to
 
-- build the library (`npm prepare`)
+- build the library (`yarn prepare`)
 - merge it, and
 - rebuild the native modules before running the app.
 

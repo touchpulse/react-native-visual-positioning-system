@@ -48,8 +48,10 @@
   },
   "devDependencies": {
     "@types/react": "^19.1.1",
+    "react": "19.0.0",
+    "react-native": "0.79.5",
     "react-native-builder-bob": "^0.40",
-    "typescript": "^5.0.4"
+    "typescript": "^5.5.4"
   },
   "react-native-builder-bob": {
     "source": "src",
@@ -61,7 +63,8 @@
       [
         "typescript",
         {
-          "project": "tsconfig.json"
+          "project": "tsconfig.json",
+          "tsc": "node_modules/typescript/bin/tsc"
         }
       ]
     ]
