@@ -1,0 +1,26 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "A Turbo Native Module for Google's Visual Positioning System.",
+  "main": "index.js",
+  "repository": "git@github.com:touchpulse/react-native-visual-positioning-system.git",
+  "author": "Sjoerd van de Goor <sjoerd@touchpulse.nl> (https://github.com/svdgoor)",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "react": "19.0.0",
+    "react-native": "0.79.5"
+  },
+  "resolutions": {
+    "glob": "^9.0.0",
+    "rimraf": "^4.0.0"
+  },
+  "scripts": {
+    "android": "cd apps/vps-example && yarn android",
+    "ios": "cd apps/vps-example && yarn ios"
+  }
+}
