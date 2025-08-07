@@ -29,7 +29,7 @@ public class VisualPositioningSystemModule extends NativeVisualPositioningSystem
 
   @Override
   public void add(double a, double b, Promise promise) {
-    promise.resolve(a + b);
+    promise.resolve(a + b + 2);
     emitOnValueChanged(a + b + 1);
   }
 }

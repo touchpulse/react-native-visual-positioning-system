@@ -5,9 +5,9 @@
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
-    "android:upgrade": "cd .. && yarn prepare && cd ./example/ && yarn upgrade react-native-visual-positioning-system && yarn android",
+    "android:upgrade": "cd ../package && yarn prepare && cd ../example/ && yarn android",
     "ios": "expo run:ios",
-    "ios:upgrade": "cd .. && yarn prepare && cd ./example/ && yarn upgrade react-native-visual-positioning-system && yarn ios",
+    "ios:upgrade": "cd ../package && yarn prepare && cd ../example/ && yarn ios",
     "web": "expo start --web"
   },
   "dependencies": {
