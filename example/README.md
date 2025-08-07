@@ -37,13 +37,13 @@ allowing for easy development and testing.
 
 ## Development
 
-If you modified the parent package's code, you need to:
+If you modified the parent package's code, you need to
 
-- build the library
+- build the library (`npm prepare`)
 - merge it, and
 - rebuild the native modules before running the app.
 
-Use:
+For your convenience this has been merged into a simple command per OS:
 
 ```bash
 yarn android:upgrade
