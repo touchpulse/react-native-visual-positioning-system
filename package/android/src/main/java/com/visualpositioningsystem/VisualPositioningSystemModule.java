@@ -15,7 +15,6 @@ public class VisualPositioningSystemModule extends NativeVisualPositioningSystem
   }
 
   @Override
-  @NonNull
   public void start(Promise promise) {
     // Initialization logic can be added here if needed
     promise.resolve(null);

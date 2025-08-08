@@ -1,19 +1,27 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.12.0")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+    }
+}
+
 plugins {
     id "com.android.library"
     id "com.facebook.react"
 }
 
-def safeExtGet(prop, fallback) {
-    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
-}
-
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 34)
     namespace "com.visualpositioningsystem"
 
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 24)
-        targetSdkVersion safeExtGet('targetSdkVersion', 34)
+        compileSdk 36
+        minSdkVersion 24
+        targetSdkVersion 36
     }
 
     compileOptions {
@@ -29,12 +37,12 @@ repositories {
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
-    api 'com.facebook.react:react-native'
+    implementation("com.facebook.react:react-android:0.80.2")
 
     // Dependencies for GeospatialActivity
     implementation 'com.google.ar:core:1.50.0'
-    implementation 'com.google.android.gms:play-services-location:21.0.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
     implementation 'de.javagl:obj:0.4.0'
 }
