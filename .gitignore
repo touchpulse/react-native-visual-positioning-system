@@ -31,3 +31,8 @@ yarn-debug.log*
 yarn-error.log*
 example/android/
 package/android/build/
+package/android/.classpath
+
+package/android/.project
+
+package/android/.settings/
