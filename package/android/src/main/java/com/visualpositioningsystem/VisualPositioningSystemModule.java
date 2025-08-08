@@ -1,8 +1,10 @@
 package com.visualpositioningsystem;
 
+import android.content.Intent;
 import androidx.annotation.NonNull;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactMethod;
 
 public class VisualPositioningSystemModule extends NativeVisualPositioningSystemSpec {
 
@@ -25,6 +27,14 @@ public class VisualPositioningSystemModule extends NativeVisualPositioningSystem
   @NonNull
   public String getName() {
     return NAME;
+  }
+
+  @ReactMethod
+  public void startVps() {
+    ReactApplicationContext context = getReactApplicationContext();
+    Intent intent = new Intent(context, GeospatialActivity.class);
+    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    context.startActivity(intent);
   }
 
   @Override

@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id "com.android.library" version "7.3.1" apply false
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        // The following is required to find the React Native artifacts.
+        maven {
+            url "$rootDir/../../node_modules/react-native/android"
+        }
+    }
+}
+
+rootProject.name = "react-native-visual-positioning-system"
+includeBuild("$rootDir/../../node_modules/@react-native/gradle-plugin")

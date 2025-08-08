@@ -36,3 +36,11 @@ package/android/.classpath
 package/android/.project
 
 package/android/.settings/
+
+package/android/gradle/wrapper/gradle-wrapper.jar
+
+package/android/gradle/wrapper/gradle-wrapper.properties
+
+package/android/gradlew
+
+package/android/gradlew.bat
